@@ -131,7 +131,7 @@ window.onload = function () {
       if (teamPlayers.hasOwnProperty(teamName)) {
         const customDropdown = document.createElement("div");
         customDropdown.classList.add("custom-dropdown");
-        customDropdown.innerHTML = `<span>${teamName}</span>`;
+        customDropdown.innerHTML = `<span>${teamName}<span class="arrow-icon"></span></span>`;
 
         const dropdownContent = document.createElement("div");
         dropdownContent.classList.add("dropdown-content");
