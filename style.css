@@ -13,6 +13,10 @@ td, th {
   padding: 8px;
 }
 
+td.custom-dropdown-cell:hover {
+  background-color: #f1f1f1;
+}
+
 th {
   background-color: #C60021;
   color: #FFFFFF;
@@ -42,6 +46,13 @@ h1 {
   display: inline-block;
   cursor: pointer;
 }
+
+
+
+.custom-dropdown.active {
+  background-color: #ddd;
+}
+
 
 .dropdown-content {
   display: none;
@@ -81,5 +92,16 @@ h1 {
   border-top: 4px solid currentColor;
   vertical-align: middle;
 }
+
+.dropdown-content a.player-link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.dropdown-content a.greyed-out {
+  color: #999;
+}
+
 
 
