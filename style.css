@@ -103,5 +103,28 @@ h1 {
   color: #999;
 }
 
+.player-data-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+.player-data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.player-data-table th,
+.player-data-table td {
+  border: 1px solid #ccc;
+  text-align: left;
+  padding: 8px;
+}
+
+.player-data-table th {
+  background-color: #f2f2f2;
+}
+
+
 
 
