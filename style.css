@@ -33,14 +33,6 @@ h1 {
   color: #C60021;
 }
 
-.time-morning {
-  background-color: #FDD6BA;
-}
-
-.time-evening {
-  background-color: #FFC7CE;
-}
-
 .custom-dropdown {
   position: relative;
   display: inline-block;
@@ -126,9 +118,140 @@ h1 {
 }
 
 .special-name {
-  color: #ff0000; /* Red font color */
-  font-weight: bold; /* Bold text */
+  font-family: 'Courier New', Courier, monospace; /* Change this to the desired font */
+  font-weight: bold;
+  font-variant: small-caps;
+  background-image: linear-gradient(135deg, #b38f00 0%, #ffd700 100%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
+.special-name::first-letter {
+  font-size: 1.5em;
+}
+
+
+
+
+.time-early-morning {
+  background-image: linear-gradient(to bottom, #87CEFA, #1E90FF);
+}
+
+.time-noon {
+  background-image: linear-gradient(to bottom, #FFD700, #FFA500);
+}
+
+.time-evening {
+  background-image: linear-gradient(to bottom, #FFA07A, #FF4500);
+}
+
+.time-night {
+  background-image: linear-gradient(to bottom, #800080, #4B0082);
+}
+
+.color-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.legend-color {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 1em;
+}
+
+.main-header h1 {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 22px;
+}
+
+.hamburger-menu span {
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  position: absolute;
+  width: 100%;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-menu span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-menu span:nth-child(3) {
+  bottom: 0;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transition: left 0.3s;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin-bottom: 10px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #947676;
+  font-size: 18px;
+}
+
+/* Show menu when it's active */
+.main-nav.active {
+  display: block;
+}
+
+body.pushed {
+  position: relative;
+  left: 250px;
+  transition: left 0.3s;
+}
+
+
 
 
 
